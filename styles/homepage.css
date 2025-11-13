@@ -1,0 +1,817 @@
+/* Home Page styles */
+.hero-container img {
+  width: 100%;
+}
+
+.about-section {
+  padding-top: 1rem;
+}
+
+.introduction-section {
+  display: flex;
+  padding-top: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img-frame {
+  position: relative;
+  width: 300px;
+  height: 360px;
+}
+
+.profile-img-frame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 286px;
+  height: 340px;
+  border: 1px solid var(--accent-color);
+  z-index: -1;
+}
+
+.profile-img-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 286px;
+}
+
+.profile-img {
+  position: relative;
+  background-color: var(--accent-color);
+}
+
+.profile-img > img {
+  background-color: var(--accent-color);
+  height: auto;
+  display: block;
+}
+
+.instagram-handle {
+  position: absolute;
+  bottom: 10px;
+  left: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.img-frame {
+  width: 286px;
+  height: 393px;
+  position: absolute;
+  border: 1px solid var(--accent-color);
+}
+
+.instagram-handle img {
+  filter: brightness(0) invert(1);
+}
+
+.certification {
+  border: 0.5px solid var(--dark-black);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.job-title {
+  font-family: var(--Baskervville-font);
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.job-description {
+  font-family: var(--inter-font);
+  font-size: 1em;
+  padding: 0 1em;
+  color: var(--light-mid-grey);
+}
+
+.profile-text-container + img {
+  height: 2em;
+  width: 2em;
+}
+
+.signature {
+  padding: 1em;
+}
+
+.intro-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.profile-text-container button {
+  color: var(--bold-main-color);
+  border: 1px solid var(--bold-main-color);
+  background-color: white;
+  font-family: var(--Baskervville-font);
+  font-size: 1em;
+  width: 160px;
+  height: 53px;
+  cursor: pointer;
+}
+
+.brand-section-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+  max-width: 860px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--bold-main-color);
+}
+
+.brand-section-title::before,
+.brand-section-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--bold-main-color);
+}
+
+.brand-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.my-work-section {
+  background-color: var(--light-pink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 2em 0;
+}
+
+.my-work-title {
+  font-family: var(--Baskervville-font);
+  color: var(--bold-main-color);
+  font-size: 2.5em;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.my-work-title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--accent-color);
+  margin: 0.5em 1em 0;
+}
+
+.work-description {
+  font-size: 1em;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.my-work-section button {
+  color: var(--bold-main-color);
+  border: 1px solid var(--bold-main-color);
+  background-color: white;
+  font-family: var(--Baskervville-font);
+  font-size: 1em;
+  width: 160px;
+  height: 53px;
+  cursor: pointer;
+}
+
+.work-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+.work-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+}
+
+.recommendation::before {
+  display: block;
+  font-family: "Georgia", "Times New Roman", serif;
+  content: "\201C";
+  font-size: 5rem;
+  color: var(--accent-color);
+  opacity: 0.5;
+  line-height: 0.5em;
+  letter-spacing: 0.2rem;
+}
+
+.recommendation {
+  text-align: center;
+  padding: 0 1em;
+  font-size: 1.2em;
+  line-height: 150%;
+  font-family: var(--Baskervville-font);
+}
+
+.signature-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3em;
+}
+
+.signature-wrapper p {
+  font-size: 1.5em;
+  color: var(--bold-main-color);
+}
+
+.makeup-hairstyle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 2em 0;
+  margin-bottom: 2em;
+}
+
+.makeup-hairstyle-title {
+  font-family: var(--Baskervville-font);
+  color: var(--bold-main-color);
+  font-size: 2.5em;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+
+.makeup-hairstyle-title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--accent-color);
+  margin: 0.5em 1em 0;
+}
+
+.makeup-hairstyle-description {
+  font-size: 1em;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.makeup-hairstyle-section button {
+  color: var(--bold-main-color);
+  border: 1px solid var(--bold-main-color);
+  background-color: white;
+  font-family: var(--Baskervville-font);
+  font-size: 1em;
+  width: 160px;
+  height: 53px;
+  cursor: pointer;
+}
+
+.makeup-hairstyle-gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.makeup-hairstyle-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.5em;
+  color: white;
+  font-size: 3em;
+  font-family: var(--Baskervville-font);
+}
+
+.makeup-section-title {
+  font-weight: 400;
+  font-family: var(--Baskervville-font);
+  color: var(--bold-main-color);
+  font-size: 2em;
+  font-variant-numeric: lining-nums;
+}
+
+.makeup-101-section {
+  background-color: var(--light-pink);
+}
+
+.makeup-section-title {
+  font-family: var(--Baskervville-font);
+  font-size: 2.5em;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-align: center;
+  font-variant-numeric: lining-nums;
+  padding: 1em 0 1em;
+  margin: 0;
+}
+
+.makeup-101-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-pink);
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5em;
+  width: 100%;
+  padding: 0 1.5em 3.5em;
+}
+
+.event-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  text-decoration: none;
+  color: var(--dark-black);
+  width: 100%;
+}
+
+.event-item,
+.event-item:link,
+.event-item:visited,
+.event-item:hover,
+.event-item:active,
+.event-item:focus {
+  text-decoration: none;
+  color: var(--dark-black);
+}
+
+.event-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+.event-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.event-badge {
+  width: 2em;
+  height: 2em;
+  max-width: 2em;
+  max-height: 2em;
+  object-fit: contain;
+}
+
+.event-title {
+  font-family: var(--Baskervville-font);
+  font-variant-numeric: lining-nums;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  color: var(--dark-black);
+}
+
+.event-description {
+  text-align: center;
+  line-height: 160%;
+  color: var(--dark-black);
+  margin: 0;
+}
+
+.view-class-btn {
+  border: none;
+  background: none;
+  font-family: var(--Baskervville-font);
+  color: var(--bold-main-color);
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  padding: 0;
+}
+
+.view-class-btn:hover {
+  opacity: 0.7;
+}
+
+.arrow-icon {
+  display: none;
+  font-size: 1.5em;
+  color: var(--bold-main-color);
+}
+
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: inline-block;
+}
+
+.all-classes-btn {
+  color: var(--bold-main-color);
+  border: 1px solid var(--bold-main-color);
+  padding: 1em 2em;
+  background: none;
+  font-family: var(--Baskervville-font);
+  font-size: 1em;
+  width: calc(100% - 3em);
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.makeup-woman-container {
+  width: 100%;
+  position: relative;
+}
+
+.makeup-woman-container::before {
+  content: "";
+  border: 1px solid var(--light-pale-white);
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  right: 1em;
+  bottom: 1em;
+  pointer-events: none;
+}
+
+.makeup-woman-container > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 1400px) {
+  .introduction-section {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3em;
+  }
+
+  .profile-text-container {
+    display: flex;
+    align-items: start;
+  }
+
+  .job-title {
+    font-family: var(--Baskervville-font);
+    font-size: 2.5em;
+    text-align: start;
+  }
+
+  .job-description {
+    font-family: var(--inter-font);
+    font-size: 1em;
+    padding: 0;
+    color: var(--light-mid-grey);
+  }
+
+  .intro-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5em;
+    align-items: center;
+  }
+
+  .brand-section-title {
+    margin: 2rem auto;
+  }
+
+  .brand-logos {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 860px;
+    margin: 0 auto;
+    row-gap: 2rem;
+    column-gap: 1rem;
+  }
+
+  .brand-1 {
+    grid-column: 1 / 4;
+    order: 1;
+  }
+  .brand-2 {
+    grid-column: 4 / 7;
+    order: 2;
+  }
+  .brand-3 {
+    grid-column: 7 / 10;
+    order: 3;
+  }
+  .brand-7 {
+    grid-column: 10 / 13;
+    order: 4;
+  }
+
+  .brand-4 {
+    grid-column: 3 / 5;
+    order: 5;
+  }
+  .brand-6 {
+    grid-column: 5 / 7;
+    order: 6;
+  }
+  .brand-5 {
+    grid-column: 7 / 9;
+    order: 7;
+  }
+  .brand-8 {
+    grid-column: 9 / 11;
+    order: 8;
+  }
+
+  .brand-1 {
+    order: 1;
+  }
+  .brand-2 {
+    order: 2;
+  }
+  .brand-3 {
+    order: 3;
+  }
+  .brand-7 {
+    order: 4;
+  }
+  .brand-4 {
+    order: 5;
+  }
+  .brand-6 {
+    order: 6;
+  }
+  .brand-5 {
+    order: 7;
+  }
+  .brand-8 {
+    order: 8;
+  }
+
+  .my-work-section {
+    padding: 4em 0;
+  }
+
+  .my-work-title {
+    font-family: var(--Baskervville-font);
+    color: var(--bold-main-color);
+    font-size: 5em;
+    display: inline-block;
+  }
+
+  .work-description {
+    font-size: 1em;
+    text-align: center;
+    padding: 0 2em;
+    max-width: 500px;
+  }
+
+  .work-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    width: 100%;
+  }
+
+  .kawaii1 {
+    order: 1;
+  }
+
+  .kawaii2 {
+    order: 3;
+  }
+
+  .kawaii3 {
+    order: 2;
+  }
+
+  .kawaii4 {
+    order: 4;
+  }
+
+  .recommendation {
+    margin: 0 5rem;
+    max-width: 500px;
+  }
+
+  .recommendation::before {
+    margin-top: 0.5em;
+  }
+
+  .makeup-hairstyle-section {
+    padding: 4em 0;
+  }
+
+  .makeup-hairstyle-title {
+    font-family: var(--Baskervville-font);
+    color: var(--bold-main-color);
+    font-size: 5em;
+    display: inline-block;
+  }
+
+  .makeup-hairstyle-description {
+    font-size: 1em;
+    text-align: center;
+    padding: 0 2em;
+    max-width: 500px;
+  }
+
+  .makeup-hairstyle-gallery {
+    grid-template-columns: 1fr 1.3fr 1fr;
+    gap: 10rem;
+    align-items: center;
+    padding-top: 5em;
+  }
+
+  .gallery-item {
+    position: relative;
+  }
+
+  .gallery-item:nth-child(1) {
+    transform: scale(1.15);
+    order: 2;
+  }
+
+  .gallery-item:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--accent-color);
+    z-index: -1;
+  }
+
+  .gallery-item:nth-child(2) {
+    order: 1;
+  }
+
+  .gallery-item:nth-child(3) {
+    order: 3;
+  }
+
+  .gallery-label {
+    position: absolute;
+    transform: translateX(0);
+    left: 0;
+    text-indent: -0.75em;
+    letter-spacing: 0.05em;
+    color: var(--light-pink);
+    font-size: 3em;
+    font-family: var(--Baskervville-font);
+  }
+
+  .gallery-label::first-letter {
+    color: var(--accent-color);
+  }
+
+  .makeup-101-section {
+    margin: 3em;
+  }
+
+  .makeup-section-title {
+    padding: 1em 0 1em;
+    font-size: 3em;
+  }
+
+  .makeup-101-container {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 5em;
+    padding: 0 3em 5em;
+  }
+
+  .events-list {
+    flex: 1;
+    align-items: stretch;
+    gap: 2em;
+    padding: 0;
+  }
+
+  .event-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+
+  .event-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .event-content {
+    align-items: flex-start;
+    gap: 0.8em;
+  }
+
+  .event-title-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .event-badge {
+    width: 1.5em;
+    height: 1.5em;
+    max-width: 1.5em;
+    max-height: 1.5em;
+    flex-shrink: 0;
+  }
+
+  .event-title {
+    text-align: left;
+    font-size: 1.3em;
+  }
+
+  .event-description {
+    text-align: left;
+    max-width: 400px;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .arrow-icon {
+    display: block;
+    flex-shrink: 0;
+    margin-left: 2em;
+  }
+
+  .all-classes-btn {
+    width: auto;
+    min-width: 300px;
+    align-self: flex-start;
+  }
+
+  .makeup-woman-container {
+    flex-shrink: 0;
+    width: 450px;
+    max-width: 450px;
+  }
+
+  .makeup-woman-container::before {
+    border-width: 2px;
+    top: 1.5em;
+    left: 1.5em;
+    right: 1.5em;
+    bottom: 1.5em;
+  }
+}

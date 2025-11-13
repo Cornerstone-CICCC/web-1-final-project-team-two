@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Two Project</title>
-    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/homepage.css" />
   </head>
   <body>
     <!-- Header - Nav-->
@@ -32,7 +33,6 @@
         </ul>
       </nav>
     </header>
-
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobile-menu">
       <div class="mobile-menu-content">
@@ -65,7 +65,251 @@
         </div>
       </div>
     </div>
-    
+    <picture class="hero-container">
+      <source srcset="./assets/images/hero.png" media="(min-width: 1400px)" />
+      <img src="./assets/images/hero-mobile.png" alt="hero image" />
+    </picture>
+    <div class="about-section">
+      <div class="introduction-section">
+        <div class="profile-text-container">
+          <picture>
+            <source
+              srcset="./assets/logos/logo4.svg"
+              media="(min-width: 1400px)"
+            />
+            <img src="./assets/logos/logo3.svg" alt="bc logo" />
+          </picture>
+          <h2 class="job-title">
+            Professional Makeup &
+            <br />
+            Hairstyle Artist
+          </h2>
+          <p class="job-description">
+            10+ years creating stunning looks for weddings and
+            special occasions.
+          </p>
+          <div class="intro-bottom">
+            <img
+              class="signature"
+              src="./assets/images/signature.svg"
+              alt="carlabeatriz signature"
+            />
+            <button>About me</button>
+          </div>
+        </div>
+        <div class="profile-img-frame">
+          <div class="profile-img-container">
+            <div class="profile-img">
+              <img
+                src="./assets/images/profile-img.png"
+                alt="Carla Beatriz profile"
+              />
+              <div class="instagram-handle">
+                <img src="./assets/images/instagram.svg" alt="Instagram" />
+                carlabeatriz_
+              </div>
+            </div>
+            <div class="certification">
+              <img src="./assets/logos/loreal-logo.svg" alt="L'Oréal" />
+              <div class="cert-text">
+                <p>Official Certified</p>
+                <p>Professional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="brand-section-title">
+        <span>Our Brands</span>
+      </div>
+      <div class="brand-logos">
+        <img src="./assets/logos/mac-logo.svg" alt="MAC" class="brand-1" />
+        <img
+          src="./assets/logos/lancome-logo.svg"
+          alt="LANCOM"
+          class="brand-2"
+        />
+        <img
+          src="./assets/logos/inglot-logo.svg"
+          alt="INGLOT"
+          class="brand-3"
+        />
+        <img
+          src="./assets/logos/charlotte-tilbury-logo.svg"
+          alt="Charlotte-Tilbury"
+          class="brand-4"
+        />
+        <img
+          src="./assets/logos/anastasia-logo.svg"
+          alt="ANASTASIA"
+          class="brand-5"
+        />
+        <img src="./assets/logos/tarte-logo.svg" alt="tarte" class="brand-6" />
+        <img
+          src="./assets/logos/laura-mercier-logo.svg"
+          alt="LAURA MERCIER"
+          class="brand-7"
+        />
+        <img
+          src="./assets/logos/kryolan-logo.svg"
+          alt="KRYOLAN"
+          class="brand-8"
+        />
+      </div>
+    </div>
+    <div class="my-work-section">
+      <h2 class="my-work-title">YOU ARE A STAR</h2>
+      <p class="work-description">
+        Shine effortlessly, embrace your unique features with absolute
+        confidence
+      </p>
+      <button>My Work</button>
+      <div class="work-gallery">
+        <img
+          src="./assets/images/pretty-woman1.png"
+          alt="kawaii 1"
+          class="kawaii1"
+        />
+        <img
+          src="./assets/images/pretty-woman2.png"
+          alt="kawaii 2"
+          class="kawaii2"
+        />
+        <img
+          src="./assets/images/pretty-woman3.png"
+          alt="kawaii 3"
+          class="kawaii3"
+        />
+        <img
+          src="./assets/images/pretty-woman4.png"
+          alt="kawaii 4"
+          class="kawaii4"
+        />
+      </div>
+      <p class="recommendation">
+        Carla is the best! She made me the night's brightest star! She stayed
+        with me the whole wedding ensuring I always looked and felt wonderful!!
+      </p>
+      <div class="signature-wrapper">
+        <p>&lt;</p>
+        <img
+          class="reccomender-signature"
+          src="./assets/images/signature2.svg"
+          alt="reccomend signature"
+        />
+        <p>&gt;</p>
+      </div>
+    </div>
+    <div class="makeup-hairstyle-section">
+      <h2 class="makeup-hairstyle-title">
+        MAKEUP & <br />
+        HAIRSTYLE
+      </h2>
+      <p class="makeup-hairstyle-description">
+        We offer fully customizable plan to meet your unique requirements.
+      </p>
+      <button>Get a Quote</button>
+      <div class="makeup-hairstyle-gallery">
+        <div class="gallery-item">
+          <img
+            src="./assets/images/wedding-woman.png"
+            alt="wedding woman img"
+          />
+          <span class="gallery-label">Wedding</span>
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/party-woman.png" alt="party woman img" />
+          <span class="gallery-label">Party</span>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="./assets/images/photoshoot-woman.png"
+            alt="photoshoot woman img"
+          />
+          <span class="gallery-label">PhotoShoot</span>
+        </div>
+      </div>
+    </div>
+    <div class="makeup-101-section">
+      <h2 class="makeup-section-title">MAKE UP 101</h2>
+      <div class="makeup-101-container">
+        <div class="events-list">
+          <a href="#" class="event-item">
+            <div class="event-content">
+              <div class="event-title-container">
+                <img
+                  class="event-badge"
+                  src="./assets/logos/event_badge.svg"
+                  alt="event badge"
+                />
+                <p class="event-title">1-on-1 Master Class</p>
+              </div>
+              <p class="event-description">
+                Customize your learning experience to excel in your chosen
+                areas, all at your own pace.
+              </p>
+              <button class="view-class-btn mobile-only">
+                View Class <span>></span>
+              </button>
+            </div>
+            <span class="arrow-icon desktop-only">></span>
+          </a>
+
+          <a href="#" class="event-item">
+            <div class="event-content">
+              <div class="event-title-container">
+                <img
+                  class="event-badge"
+                  src="./assets/logos/event_badge.svg"
+                  alt="event badge"
+                />
+                <p class="event-title">Professional 1-day Makeup workshop</p>
+              </div>
+              <p class="event-description">
+                Discover popular and practical techniques to apply right away!
+              </p>
+              <button class="view-class-btn mobile-only">
+                View Class <span>></span>
+              </button>
+            </div>
+            <span class="arrow-icon desktop-only">></span>
+          </a>
+
+          <a href="#" class="event-item">
+            <div class="event-content">
+              <div class="event-title-container">
+                <img
+                  class="event-badge"
+                  src="./assets/logos/event_badge.svg"
+                  alt="event badge"
+                />
+                <p class="event-title">Self-Makeup Beginner class</p>
+              </div>
+              <p class="event-description">
+                Learn the basics, practice doing your own makeup and make new
+                friends in the process!
+              </p>
+              <button class="view-class-btn mobile-only">
+                View Class <span>></span>
+              </button>
+            </div>
+            <span class="arrow-icon desktop-only">></span>
+          </a>
+          <button class="all-classes-btn">All Classes</button>
+        </div>
+        <div class="makeup-woman-container">
+          <img
+            src="./assets/images/makeup-woman.png"
+            alt="make up 101 section woman"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- <div class="diy-beauty-corner">
+      <h2 class="beauty-corner-title">DIY Beauty Corner</h2>
+      <div class="audio-container"></div>
+
+    </div> -->
     <!-- Footer begin-->
     <footer>
       <div class="logo-container">

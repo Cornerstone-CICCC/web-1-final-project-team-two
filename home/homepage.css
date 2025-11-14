@@ -1,11 +1,22 @@
-/* Home Page styles */
+/* ========================================
+   Hero Section
+   ======================================== */
+
 .hero-container img {
   width: 100%;
 }
 
+/* ========================================
+   About Section
+   ======================================== */
+
 .about-section {
   padding-top: 1rem;
 }
+
+/* ========================================
+   Introduction Section
+   ======================================== */
 
 .introduction-section {
   display: flex;
@@ -15,6 +26,7 @@
   justify-content: center;
 }
 
+/* Profile Image Frame */
 .profile-img-frame {
   position: relative;
   width: 300px;
@@ -63,15 +75,15 @@
   border-radius: 20px;
 }
 
+.instagram-handle img {
+  filter: brightness(0) invert(1);
+}
+
 .img-frame {
   width: 286px;
   height: 393px;
   position: absolute;
   border: 1px solid var(--accent-color);
-}
-
-.instagram-handle img {
-  filter: brightness(0) invert(1);
 }
 
 .certification {
@@ -86,6 +98,7 @@
   z-index: 1;
 }
 
+/* Profile Text */
 .profile-text-container {
   display: flex;
   flex-direction: column;
@@ -126,16 +139,50 @@
   gap: 0.5em;
 }
 
-.profile-text-container button {
+/* common button style */
+.profile-text-container button,
+.my-work-section button,
+.makeup-hairstyle-section button {
   color: var(--bold-main-color);
   border: 1px solid var(--bold-main-color);
-  background-color: white;
   font-family: var(--Baskervville-font);
+  background: none;
   font-size: 1em;
   width: 160px;
   height: 53px;
   cursor: pointer;
+  transition: opacity 0.3s;
 }
+
+.profile-text-container button:hover,
+.my-work-section button:hover,
+.makeup-hairstyle-section button:hover {
+  opacity: 0.8;
+}
+
+.all-classes-btn,
+.beauty-corner button {
+  color: var(--bold-main-color);
+  border: 1px solid var(--bold-main-color);
+  background: none;
+  font-family: var(--Baskervville-font);
+  font-size: 1em;
+  width: calc(100% - 3em);
+  max-width: 400px;
+  padding: 1em 2em;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.all-classes-btn:hover,
+.beauty-corner button:hover {
+  opacity: 0.8;
+}
+
+/* ========================================
+   Brand Section
+   ======================================== */
 
 .brand-section-title {
   display: flex;
@@ -165,8 +212,13 @@
   justify-items: center;
 }
 
+/* ========================================
+   My Work Section
+   ======================================== */
+
 .my-work-section {
   background-color: var(--light-pink);
+  margin-bottom: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -175,7 +227,8 @@
   padding: 2em 0;
 }
 
-.my-work-title {
+.my-work-title,
+.makeup-hairstyle-title {
   font-family: var(--Baskervville-font);
   color: var(--bold-main-color);
   font-size: 2.5em;
@@ -183,7 +236,8 @@
   font-weight: 300;
 }
 
-.my-work-title::after {
+.my-work-title::after,
+.makeup-hairstyle-title::after {
   content: "";
   display: block;
   height: 1px;
@@ -191,21 +245,11 @@
   margin: 0.5em 1em 0;
 }
 
-.work-description {
+.work-description,
+.makeup-hairstyle-description {
   font-size: 1em;
   text-align: center;
   padding: 0 2em;
-}
-
-.my-work-section button {
-  color: var(--bold-main-color);
-  border: 1px solid var(--bold-main-color);
-  background-color: white;
-  font-family: var(--Baskervville-font);
-  font-size: 1em;
-  width: 160px;
-  height: 53px;
-  cursor: pointer;
 }
 
 .work-gallery {
@@ -224,6 +268,9 @@
   object-position: center;
 }
 
+/* ========================================
+   Recommendation Section
+   ======================================== */
 .recommendation::before {
   display: block;
   font-family: "Georgia", "Times New Roman", serif;
@@ -255,6 +302,9 @@
   color: var(--bold-main-color);
 }
 
+/* ========================================
+   Makeup & Hairstyle Section
+   ======================================== */
 .makeup-hairstyle-section {
   display: flex;
   flex-direction: column;
@@ -262,42 +312,7 @@
   align-items: center;
   gap: 2em;
   padding: 2em 0;
-  margin-bottom: 2em;
-}
-
-.makeup-hairstyle-title {
-  font-family: var(--Baskervville-font);
-  color: var(--bold-main-color);
-  font-size: 2.5em;
-  display: inline-block;
-  text-align: center;
-  letter-spacing: 0.1em;
-  font-weight: 300;
-}
-
-.makeup-hairstyle-title::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: var(--accent-color);
-  margin: 0.5em 1em 0;
-}
-
-.makeup-hairstyle-description {
-  font-size: 1em;
-  text-align: center;
-  padding: 0 2em;
-}
-
-.makeup-hairstyle-section button {
-  color: var(--bold-main-color);
-  border: 1px solid var(--bold-main-color);
-  background-color: white;
-  font-family: var(--Baskervville-font);
-  font-size: 1em;
-  width: 160px;
-  height: 53px;
-  cursor: pointer;
+  padding-bottom: 2em;
 }
 
 .makeup-hairstyle-gallery {
@@ -330,14 +345,9 @@
   font-family: var(--Baskervville-font);
 }
 
-.makeup-section-title {
-  font-weight: 400;
-  font-family: var(--Baskervville-font);
-  color: var(--bold-main-color);
-  font-size: 2em;
-  font-variant-numeric: lining-nums;
-}
-
+/* ========================================
+   Makeup 101 Section
+   ======================================== */
 .makeup-101-section {
   background-color: var(--light-pink);
 }
@@ -349,8 +359,9 @@
   letter-spacing: 0.15em;
   text-align: center;
   font-variant-numeric: lining-nums;
-  padding: 1em 0 1em;
+  padding: 1em 0;
   margin: 0;
+  color: var(--bold-main-color);
 }
 
 .makeup-101-container {
@@ -360,6 +371,7 @@
   background-color: var(--light-pink);
 }
 
+/* Events List */
 .events-list {
   display: flex;
   flex-direction: column;
@@ -412,6 +424,7 @@
   max-width: 2em;
   max-height: 2em;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .event-title {
@@ -451,6 +464,7 @@
   color: var(--bold-main-color);
 }
 
+/* Responsive Display Classes */
 .desktop-only {
   display: none;
 }
@@ -459,18 +473,7 @@
   display: inline-block;
 }
 
-.all-classes-btn {
-  color: var(--bold-main-color);
-  border: 1px solid var(--bold-main-color);
-  padding: 1em 2em;
-  background: none;
-  font-family: var(--Baskervville-font);
-  font-size: 1em;
-  width: calc(100% - 3em);
-  max-width: 400px;
-  cursor: pointer;
-}
-
+/* Makeup Woman Image */
 .makeup-woman-container {
   width: 100%;
   position: relative;
@@ -493,33 +496,156 @@
   display: block;
 }
 
+/* ========================================
+   Beauty Corner Section
+   ======================================== */
+.beauty-corner {
+  display: flex;
+  margin-top: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  gap: 2em;
+}
+
+.beauty-corner-title {
+  font-family: var(--Baskervville-font);
+  font-weight: 300;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+  color: var(--bold-main-color);
+}
+
+/* Video Styles */
+.video-container {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 1em;
+}
+
+.video-container::-webkit-scrollbar {
+  display: none;
+}
+
+.video-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+}
+
+.video-card {
+  text-align: center;
+  flex: 0 0 calc(100vw - 40px);
+  scroll-snap-align: start;
+}
+
+.video-wrapper {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.video-wrapper video {
+  width: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.video-wrapper:hover::after {
+  opacity: 0.8;
+}
+
+/* Video Modal */
+.video-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-modal:target {
+  display: flex;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  line-height: 1;
+  transition: color 0.3s;
+}
+
+.modal-close:hover {
+  color: #ccc;
+}
+
+/* ========================================
+   Desktop Styles (min-width: 1400px)
+   ======================================== */
+
 @media (min-width: 1400px) {
+  .my-work-title,
+  .makeup-hairstyle-title {
+    font-size: 5em;
+  }
+
+  .work-description,
+  .makeup-hairstyle-description {
+    max-width: 500px;
+  }
+
+  .my-work-section,
+  .makeup-hairstyle-section {
+    padding: 4em 0;
+  }
+
   .introduction-section {
-    display: flex;
     flex-direction: row-reverse;
     gap: 3em;
   }
 
   .profile-text-container {
-    display: flex;
     align-items: start;
   }
 
   .job-title {
-    font-family: var(--Baskervville-font);
     font-size: 2.5em;
     text-align: start;
   }
 
   .job-description {
-    font-family: var(--inter-font);
-    font-size: 1em;
     padding: 0;
-    color: var(--light-mid-grey);
   }
 
   .intro-bottom {
-    display: flex;
     flex-direction: row-reverse;
     gap: 5em;
     align-items: center;
@@ -530,7 +656,6 @@
   }
 
   .brand-logos {
-    display: grid;
     grid-template-columns: repeat(12, 1fr);
     max-width: 860px;
     margin: 0 auto;
@@ -554,7 +679,6 @@
     grid-column: 10 / 13;
     order: 4;
   }
-
   .brand-4 {
     grid-column: 3 / 5;
     order: 5;
@@ -572,49 +696,7 @@
     order: 8;
   }
 
-  .brand-1 {
-    order: 1;
-  }
-  .brand-2 {
-    order: 2;
-  }
-  .brand-3 {
-    order: 3;
-  }
-  .brand-7 {
-    order: 4;
-  }
-  .brand-4 {
-    order: 5;
-  }
-  .brand-6 {
-    order: 6;
-  }
-  .brand-5 {
-    order: 7;
-  }
-  .brand-8 {
-    order: 8;
-  }
-
-  .my-work-section {
-    padding: 4em 0;
-  }
-
-  .my-work-title {
-    font-family: var(--Baskervville-font);
-    color: var(--bold-main-color);
-    font-size: 5em;
-    display: inline-block;
-  }
-
-  .work-description {
-    font-size: 1em;
-    text-align: center;
-    padding: 0 2em;
-    max-width: 500px;
-  }
-
+  /* Work Gallery */
   .work-gallery {
     grid-template-columns: repeat(4, 1fr);
     padding: 0;
@@ -624,19 +706,17 @@
   .kawaii1 {
     order: 1;
   }
-
   .kawaii2 {
     order: 3;
   }
-
   .kawaii3 {
     order: 2;
   }
-
   .kawaii4 {
     order: 4;
   }
 
+  /* Recommendation */
   .recommendation {
     margin: 0 5rem;
     max-width: 500px;
@@ -646,33 +726,12 @@
     margin-top: 0.5em;
   }
 
-  .makeup-hairstyle-section {
-    padding: 4em 0;
-  }
-
-  .makeup-hairstyle-title {
-    font-family: var(--Baskervville-font);
-    color: var(--bold-main-color);
-    font-size: 5em;
-    display: inline-block;
-  }
-
-  .makeup-hairstyle-description {
-    font-size: 1em;
-    text-align: center;
-    padding: 0 2em;
-    max-width: 500px;
-  }
-
+  /* Makeup & Hairstyle Gallery */
   .makeup-hairstyle-gallery {
     grid-template-columns: 1fr 1.3fr 1fr;
     gap: 10rem;
     align-items: center;
     padding-top: 5em;
-  }
-
-  .gallery-item {
-    position: relative;
   }
 
   .gallery-item:nth-child(1) {
@@ -700,26 +759,24 @@
   }
 
   .gallery-label {
-    position: absolute;
     transform: translateX(0);
     left: 0;
     text-indent: -0.75em;
     letter-spacing: 0.05em;
     color: var(--light-pink);
-    font-size: 3em;
-    font-family: var(--Baskervville-font);
   }
 
   .gallery-label::first-letter {
     color: var(--accent-color);
   }
 
+  /* Makeup 101 Section */
   .makeup-101-section {
     margin: 3em;
   }
 
   .makeup-section-title {
-    padding: 1em 0 1em;
+    padding: 1em 0;
     font-size: 3em;
   }
 
@@ -732,6 +789,7 @@
     padding: 0 3em 5em;
   }
 
+  /* Events List */
   .events-list {
     flex: 1;
     align-items: stretch;
@@ -741,7 +799,6 @@
 
   .event-item {
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     padding: 1.5em;
     border-radius: 8px;
@@ -760,7 +817,6 @@
   .event-title-container {
     flex-direction: row;
     align-items: center;
-    gap: 1em;
   }
 
   .event-badge {
@@ -768,7 +824,6 @@
     height: 1.5em;
     max-width: 1.5em;
     max-height: 1.5em;
-    flex-shrink: 0;
   }
 
   .event-title {
@@ -781,6 +836,7 @@
     max-width: 400px;
   }
 
+  /* Responsive Display */
   .mobile-only {
     display: none;
   }
@@ -791,16 +847,20 @@
 
   .arrow-icon {
     display: block;
-    flex-shrink: 0;
     margin-left: 2em;
   }
 
-  .all-classes-btn {
+  .all-classes-btn,
+  .beauty-corner button {
     width: auto;
     min-width: 300px;
+  }
+
+  .all-classes-btn {
     align-self: flex-start;
   }
 
+  /* Makeup Woman Container */
   .makeup-woman-container {
     flex-shrink: 0;
     width: 450px;
@@ -813,5 +873,30 @@
     left: 1.5em;
     right: 1.5em;
     bottom: 1.5em;
+  }
+
+  /* Video Section */
+  .video-container {
+    overflow: visible;
+    scroll-snap-type: none;
+    padding: 0;
+  }
+
+  .video-track {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .video-card {
+    flex: none;
+    scroll-snap-align: none;
+  }
+
+  .beauty-corner-title {
+    font-size: 2.5em;
   }
 }

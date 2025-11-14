@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Two Project</title>
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/homepage.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./home/homepage.css" />
   </head>
   <body>
     <!-- Header - Nav-->
@@ -66,8 +66,11 @@
       </div>
     </div>
     <picture class="hero-container">
-      <source srcset="./assets/images/hero.png" media="(min-width: 1400px)" />
-      <img src="./assets/images/hero-mobile.png" alt="hero image" />
+      <source
+        srcset="./assets/images/hero/hero.png"
+        media="(min-width: 1400px)"
+      />
+      <img src="./assets/images/hero/hero-mobile.png" alt="hero image" />
     </picture>
     <div class="about-section">
       <div class="introduction-section">
@@ -91,7 +94,7 @@
           <div class="intro-bottom">
             <img
               class="signature"
-              src="./assets/images/signature.svg"
+              src="./assets/images/signature/signature.svg"
               alt="carlabeatriz signature"
             />
             <button>About me</button>
@@ -166,22 +169,22 @@
       <button>My Work</button>
       <div class="work-gallery">
         <img
-          src="./assets/images/pretty-woman1.png"
+          src="./assets/images/pretty/pretty-woman1.png"
           alt="kawaii 1"
           class="kawaii1"
         />
         <img
-          src="./assets/images/pretty-woman2.png"
+          src="./assets/images/pretty/pretty-woman2.png"
           alt="kawaii 2"
           class="kawaii2"
         />
         <img
-          src="./assets/images/pretty-woman3.png"
+          src="./assets/images/pretty/pretty-woman3.png"
           alt="kawaii 3"
           class="kawaii3"
         />
         <img
-          src="./assets/images/pretty-woman4.png"
+          src="./assets/images/pretty/pretty-woman4.png"
           alt="kawaii 4"
           class="kawaii4"
         />
@@ -194,7 +197,7 @@
         <p>&lt;</p>
         <img
           class="reccomender-signature"
-          src="./assets/images/signature2.svg"
+          src="./assets/images/signature/signature2.svg"
           alt="reccomend signature"
         />
         <p>&gt;</p>
@@ -212,18 +215,21 @@
       <div class="makeup-hairstyle-gallery">
         <div class="gallery-item">
           <img
-            src="./assets/images/wedding-woman.png"
+            src="./assets/images/pretty/wedding-woman.png"
             alt="wedding woman img"
           />
           <span class="gallery-label">Wedding</span>
         </div>
         <div class="gallery-item">
-          <img src="./assets/images/party-woman.png" alt="party woman img" />
+          <img
+            src="./assets/images/pretty/party-woman.png"
+            alt="party woman img"
+          />
           <span class="gallery-label">Party</span>
         </div>
         <div class="gallery-item">
           <img
-            src="./assets/images/photoshoot-woman.png"
+            src="./assets/images/pretty/photoshoot-woman.png"
             alt="photoshoot woman img"
           />
           <span class="gallery-label">PhotoShoot</span>
@@ -299,17 +305,71 @@
         </div>
         <div class="makeup-woman-container">
           <img
-            src="./assets/images/makeup-woman.png"
+            src="./assets/images/makeup101/makeup-woman.png"
             alt="make up 101 section woman"
           />
         </div>
       </div>
     </div>
-    <!-- <div class="diy-beauty-corner">
+    <div class="beauty-corner">
       <h2 class="beauty-corner-title">DIY Beauty Corner</h2>
-      <div class="audio-container"></div>
-
-    </div> -->
+      <div class="video-container">
+        <div class="video-track">
+          <div class="video-card">
+            <a href="#video-modal-1" class="video-wrapper">
+              <img src="./assets/images/video/video1.png" alt="video 1" />
+            </a>
+          </div>
+          <div class="video-card">
+            <a href="#video-modal-2" class="video-wrapper">
+              <img src="./assets/images/video/video2.png" alt="video 2" />
+            </a>
+          </div>
+          <div class="video-card">
+            <a href="#video-modal-3" class="video-wrapper">
+              <img src="./assets/images/video/video3.png" alt="video 3" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <button>More Beauty Tips</button>
+      <div id="video-modal-1" class="video-modal">
+        <div class="modal-content">
+          <a href="#" class="modal-close">&times;</a>
+          <iframe
+            src="https://www.youtube.com/embed/Tu5eq9Szub4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+      <div id="video-modal-2" class="video-modal">
+        <div class="modal-content">
+          <a href="#" class="modal-close">&times;</a>
+          <iframe
+            src="https://www.youtube.com/embed/Tu5eq9Szub4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+      <div id="video-modal-3" class="video-modal">
+        <div class="modal-content">
+          <a href="#" class="modal-close">&times;</a>
+          <iframe
+            src="https://www.youtube.com/embed/Tu5eq9Szub4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
     <!-- Footer begin-->
     <footer>
       <div class="logo-container">

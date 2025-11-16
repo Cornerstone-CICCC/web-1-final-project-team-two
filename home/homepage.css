@@ -139,10 +139,13 @@
   gap: 0.5em;
 }
 
-/* common button style */
-.profile-text-container button,
-.my-work-section button,
+.profile-text-container a,
+.my-work-section a,
 .makeup-hairstyle-section button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 53px;
   color: var(--bold-main-color);
   border: 1px solid var(--bold-main-color);
   font-family: var(--Baskervville-font);

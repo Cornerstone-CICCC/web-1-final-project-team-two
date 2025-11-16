@@ -61,7 +61,8 @@
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px solid black;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .my-work-gallery-button-container button {
@@ -126,6 +127,14 @@
 }
 
 /* --- Mobile view --- */
+
+@media (max-width: 1200px) {
+  .my-work-gallery-images {
+    grid-template-columns: repeat(2, 21rem);
+    justify-items: center;
+  }
+}
+
 @media (max-width: 900px) {
   .my-work-gallery-images {
     grid-template-columns: 1fr;
@@ -150,5 +159,16 @@
 
   .my-work-gallery > button.hide {
     display: none;
+  }
+
+  .my-work-gallery-button-container button {
+    font-size: 24px;
+  }
+  .my-work-gallery-button-container button.active::after {
+    width: 154px;
+    left: -30px;
+  }
+  .my-work-gallery-button-container {
+    max-width: 300px;
   }
 }

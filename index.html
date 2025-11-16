@@ -97,7 +97,7 @@
               src="./assets/images/signature/signature.svg"
               alt="carlabeatriz signature"
             />
-            <button>About me</button>
+            <a href="/about/about.html">About me</a>
           </div>
         </div>
         <div class="profile-img-frame">
@@ -166,7 +166,7 @@
         Shine effortlessly, embrace your unique features with absolute
         confidence
       </p>
-      <button>My Work</button>
+      <a href="/my-work/my-work.html">My Work</a>
       <div class="work-gallery">
         <img
           src="./assets/images/pretty/pretty-woman1.png"
@@ -370,6 +370,141 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="header">
+        <h1>LET'S TALK</h1>
+        <p>
+          Check availability, pricing, and schedule a meeting for your<br />special
+          day or our academy services.
+        </p>
+      </div>
+
+      <div class="form-box" id="contact-form">
+        <h2 class="form-title">Services</h2>
+
+        <form id="contactForm">
+          <!-- Event Type -->
+          <div class="form-section">
+            <label class="form-label">Event Type</label>
+            <div class="event-type-group">
+              <button
+                type="button"
+                class="event-type-btn active"
+                data-type="wedding"
+              >
+                Wedding <img src="./assets/images/check.svg" alt="check icon" />
+              </button>
+              <button type="button" class="event-type-btn" data-type="party">
+                Party <img src="./assets/images/check.svg" alt="check icon" />
+              </button>
+              <button
+                type="button"
+                class="event-type-btn"
+                data-type="photoshoot"
+              >
+                Photoshoot
+                <img src="./assets/images/check.svg" alt="check icon" />
+              </button>
+            </div>
+          </div>
+
+          <!-- Event Date & Time -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Event Date</label>
+              <input type="date" id="eventDate" placeholder="Select Date" />
+              <div class="checkbox-group">
+                <input type="checkbox" id="dateNotDecided" />
+                <label for="dateNotDecided">Not decided</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Event Time</label>
+              <select id="eventTime">
+                <option value="Full day">Full day</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+              </select>
+              <div class="checkbox-group">
+                <input type="checkbox" id="timeNotDecided" />
+                <label for="timeNotDecided">Not decided</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Name -->
+          <div class="form-section">
+            <label class="form-label">Name</label>
+            <input type="text" id="name" placeholder="Your name" />
+          </div>
+
+          <!-- Contact -->
+          <div class="form-section">
+            <label class="form-label">Contact</label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="contactCall"
+                  name="contact"
+                  value="call"
+                  checked
+                />
+                <label for="contactCall">Call</label>
+              </div>
+              <div class="phone-input-group">
+                <select class="country-code">
+                  <option value="+1">+1</option>
+                  <option value="+44">+44</option>
+                  <option value="+91">+91</option>
+                </select>
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  placeholder="Your mobile number"
+                />
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="contactWhatsApp"
+                  name="contact"
+                  value="whatsapp"
+                />
+                <label for="contactWhatsApp">WhatsApp</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="contactSMS"
+                  name="contact"
+                  value="sms"
+                />
+                <label for="contactSMS">SMS</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="contactEmail"
+                  name="contact"
+                  value="email"
+                />
+                <label for="contactEmail">Email</label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
     <!-- Footer begin-->
     <footer>
       <div class="logo-container">
@@ -397,6 +532,12 @@
       </div>
     </footer>
     <!-- Footer end-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script src="script.js"></script>
+    <script src="./home/form-script.js"></script>
+    <script src="./home/home-script.js"></script>
   </body>
 </html>
